@@ -228,7 +228,7 @@ class main():
         with open(file,'r') as f:
             self.MAP.locations=[]
             lines=0
-            self.action = f.readline().strip('\n')
+            self.action = int(f.readline().strip('\n'))
 
             for i in f.readlines():
                 countline= i.split(',')[0:3]
